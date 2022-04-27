@@ -29,7 +29,7 @@ public class Button: MonoBehaviour
 
     public void QuitGame()
     {
-        UnityEditor.EditorApplication.isPlaying = false;
+        //UnityEditor.EditorApplication.isPlaying = false;
         Application.Quit();
         Time.timeScale = 1f;
     }

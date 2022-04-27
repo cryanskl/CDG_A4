@@ -582,6 +582,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5380229367071386857, guid: f27b000141927b548abc83bd03c7b2db, type: 3}
   m_PrefabInstance: {fileID: 389013678}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &389353656 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7302431892039878148, guid: 69c25d73e6c23b746bc0c83d9c09122f, type: 3}
+  m_PrefabInstance: {fileID: 4841689447959063293}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &791991683
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1250,7 +1255,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1148497741
@@ -1522,7 +1527,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1281559266
@@ -2317,6 +2322,10 @@ PrefabInstance:
       propertyPath: m_TileSpriteArray.Array.data[17].m_Data
       value: 
       objectReference: {fileID: 356763219}
+    - target: {fileID: 675013669838785400, guid: 29fb12e448420f642af737fa43775f77, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 29fb12e448420f642af737fa43775f77, type: 3}
 --- !u!1001 &2064775322431121709
@@ -2392,8 +2401,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2129915797}
     - target: {fileID: 4841689448903061812, guid: 69c25d73e6c23b746bc0c83d9c09122f, type: 3}
+      propertyPath: movePoint
+      value: 
+      objectReference: {fileID: 389353656}
+    - target: {fileID: 4841689448903061812, guid: 69c25d73e6c23b746bc0c83d9c09122f, type: 3}
       propertyPath: moveSpeed
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4841689448903061812, guid: 69c25d73e6c23b746bc0c83d9c09122f, type: 3}
+      propertyPath: whatStopMovement.m_Bits
+      value: 256
       objectReference: {fileID: 0}
     - target: {fileID: 4841689448903061817, guid: 69c25d73e6c23b746bc0c83d9c09122f, type: 3}
       propertyPath: m_Name
@@ -2442,6 +2459,14 @@ PrefabInstance:
     - target: {fileID: 4841689448903061819, guid: 69c25d73e6c23b746bc0c83d9c09122f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7302431892039878148, guid: 69c25d73e6c23b746bc0c83d9c09122f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7302431892039878148, guid: 69c25d73e6c23b746bc0c83d9c09122f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 69c25d73e6c23b746bc0c83d9c09122f, type: 3}
