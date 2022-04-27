@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class move : MonoBehaviour
 {
-    public float moveSpeed;
+    public float moveSpeed =1f;
     public GameObject EndGame;
     private float ver, hor;
-  
+    public Transform movePoint;
+    public LayerMask whatStopMovement;
+
 
     // Start is called before the first frame update
     void Start()
     {
-        PlayerPrefs.SetFloat("number", 0);
+        //PlayerPrefs.SetFloat("number", 0);
+        movePoint.parent = null;
     }
 
     // Update is called once per frame
@@ -21,21 +24,42 @@ public class move : MonoBehaviour
         hor = Input.GetAxis("Horizontal");
         ver = Input.GetAxis("Vertical");
 
-        transform.position += transform.up * ver * moveSpeed * Time.deltaTime;
-        transform.position += transform.right * hor * moveSpeed * Time.deltaTime;
+        //transform.position += transform.up * ver * moveSpeed * Time.deltaTime;
+        //transform.position += transform.right * hor * moveSpeed * Time.deltaTime;
+        transform.position = Vector3.MoveTowards(transform.position, movePoint.position, moveSpeed * Time.deltaTime);
 
-
-
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Vector3.Distance(transform.position, movePoint.position) <= .05f)
         {
-            Debug.Log(PlayerPrefs.GetFloat("number"));
+            if (Mathf.Abs(Input.GetAxisRaw("Horizontal")) == 1f)
+            {
+                if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f), .2f, whatStopMovement))
+                {
+                    movePoint.position += new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f);
+                }
+                    
+            }
+            else if (Mathf.Abs(Input.GetAxisRaw("Vertical")) == 1f)
+            {
+                if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(0f, Input.GetAxisRaw("Vertical"), 0f), .2f, whatStopMovement))
+                {
+                    movePoint.position += new Vector3(0f, Input.GetAxisRaw("Vertical"), 0f);
+                }
+                    
+            }
         }
+           
 
-        if (PlayerPrefs.GetFloat("number") >= 3)
-        {
 
-            GameObject.Find("Door1").GetComponent<BoxCollider2D>().isTrigger = true;
-        }
+        //if (Input.GetKeyDown(KeyCode.Space))
+        //{
+        //Debug.Log(PlayerPrefs.GetFloat("number"));
+        //}
+
+            //if (PlayerPrefs.GetFloat("number") >= 3)
+            //{
+
+            //GameObject.Find("Door1").GetComponent<BoxCollider2D>().isTrigger = true;
+            //}
 
 
     }
