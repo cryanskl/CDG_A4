@@ -157,7 +157,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 290}
+  m_AnchoredPosition: {x: 0, y: 417}
   m_SizeDelta: {x: 200, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &130382669
@@ -230,12 +230,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5380229367071386857, guid: f27b000141927b548abc83bd03c7b2db, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.7375
+      objectReference: {fileID: 0}
+    - target: {fileID: 5380229367071386857, guid: f27b000141927b548abc83bd03c7b2db, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.0625
+      objectReference: {fileID: 0}
+    - target: {fileID: 5380229367071386857, guid: f27b000141927b548abc83bd03c7b2db, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.0000060118
       objectReference: {fileID: 0}
     - target: {fileID: 5380229367071386857, guid: f27b000141927b548abc83bd03c7b2db, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.00000089234
       objectReference: {fileID: 0}
     - target: {fileID: 5380229367071386857, guid: f27b000141927b548abc83bd03c7b2db, type: 3}
       propertyPath: m_LocalPosition.z
@@ -272,6 +280,10 @@ PrefabInstance:
     - target: {fileID: 5380229367071386858, guid: f27b000141927b548abc83bd03c7b2db, type: 3}
       propertyPath: m_Name
       value: ButtonPauseMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 5380229367071386858, guid: f27b000141927b548abc83bd03c7b2db, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f27b000141927b548abc83bd03c7b2db, type: 3}
@@ -497,11 +509,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5741311576737108541, guid: 07cd3687c646bc549bcfd10c6a62ecc8, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 410
+      value: 850
       objectReference: {fileID: 0}
     - target: {fileID: 5741311576737108541, guid: 07cd3687c646bc549bcfd10c6a62ecc8, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 310
+      value: 460
       objectReference: {fileID: 0}
     - target: {fileID: 5741311576737108541, guid: 07cd3687c646bc549bcfd10c6a62ecc8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -669,11 +681,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2627372038912612067, guid: 6d4b9b08bdcc1af438bea340b27fd79a, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 410
+      value: 850
       objectReference: {fileID: 0}
     - target: {fileID: 2627372038912612067, guid: 6d4b9b08bdcc1af438bea340b27fd79a, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 310
+      value: 460
       objectReference: {fileID: 0}
     - target: {fileID: 2627372038912612067, guid: 6d4b9b08bdcc1af438bea340b27fd79a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -752,7 +764,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!223 &1747278172
 Canvas:
   m_ObjectHideFlags: 0
@@ -762,7 +774,7 @@ Canvas:
   m_GameObject: {fileID: 1747278169}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 2
   m_Camera: {fileID: 665928787}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -783,7 +795,7 @@ RectTransform:
   m_GameObject: {fileID: 1747278169}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.024786465, y: 0.025048504, z: 1}
   m_Children:
   - {fileID: 664138255}
   - {fileID: 1718166210}
@@ -794,6 +806,6 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0.2, y: -0.1}
+  m_SizeDelta: {x: 1920, y: 1080}
+  m_Pivot: {x: 0.5, y: 0.5}
