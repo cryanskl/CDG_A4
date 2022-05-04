@@ -19,7 +19,6 @@ public class MonsterMove : MonoBehaviour
     void Update()
     {
         Moving();
-
     }
 
     void Moving()

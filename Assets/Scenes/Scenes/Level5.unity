@@ -208,11 +208,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5741311576737108541, guid: 07cd3687c646bc549bcfd10c6a62ecc8, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 800
+      value: 410
       objectReference: {fileID: 0}
     - target: {fileID: 5741311576737108541, guid: 07cd3687c646bc549bcfd10c6a62ecc8, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 440
+      value: 310
       objectReference: {fileID: 0}
     - target: {fileID: 5741311576737108541, guid: 07cd3687c646bc549bcfd10c6a62ecc8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -315,7 +315,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 402}
+  m_AnchoredPosition: {x: 0, y: 290}
   m_SizeDelta: {x: 200, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1116694557
@@ -418,7 +418,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!223 &1128021741
 Canvas:
   m_ObjectHideFlags: 0
@@ -428,7 +428,7 @@ Canvas:
   m_GameObject: {fileID: 1128021738}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 2
+  m_RenderMode: 0
   m_Camera: {fileID: 1228639545}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -449,7 +449,7 @@ RectTransform:
   m_GameObject: {fileID: 1128021738}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.025074, y: 0.026636502, z: 1}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1151065125}
   - {fileID: 1415036072}
@@ -460,9 +460,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -0.1, y: -0.2}
-  m_SizeDelta: {x: 1920, y: 1080}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
 --- !u!1001 &1151065124
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -491,20 +491,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5380229367071386857, guid: f27b000141927b548abc83bd03c7b2db, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1.725
-      objectReference: {fileID: 0}
-    - target: {fileID: 5380229367071386857, guid: f27b000141927b548abc83bd03c7b2db, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1.6875
-      objectReference: {fileID: 0}
-    - target: {fileID: 5380229367071386857, guid: f27b000141927b548abc83bd03c7b2db, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.0000026743
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5380229367071386857, guid: f27b000141927b548abc83bd03c7b2db, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.0000011189
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5380229367071386857, guid: f27b000141927b548abc83bd03c7b2db, type: 3}
       propertyPath: m_LocalPosition.z
@@ -541,10 +533,6 @@ PrefabInstance:
     - target: {fileID: 5380229367071386858, guid: f27b000141927b548abc83bd03c7b2db, type: 3}
       propertyPath: m_Name
       value: ButtonPauseMenu
-      objectReference: {fileID: 0}
-    - target: {fileID: 5380229367071386858, guid: f27b000141927b548abc83bd03c7b2db, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f27b000141927b548abc83bd03c7b2db, type: 3}
@@ -718,11 +706,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2627372038912612067, guid: 6d4b9b08bdcc1af438bea340b27fd79a, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 800
+      value: 410
       objectReference: {fileID: 0}
     - target: {fileID: 2627372038912612067, guid: 6d4b9b08bdcc1af438bea340b27fd79a, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 440
+      value: 310
       objectReference: {fileID: 0}
     - target: {fileID: 2627372038912612067, guid: 6d4b9b08bdcc1af438bea340b27fd79a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
