@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using UnityEngine.SceneManagement;
 public class move : MonoBehaviour
 {
     [Header("移动速度")]
@@ -17,6 +17,8 @@ public class move : MonoBehaviour
     public Text bloodBarText;
     [Header("血条")]
     public RectTransform bloorBarImage;
+    [Header("星星序列")]
+    public GameObject[] starList;
    
     
     /// <summary>
@@ -35,6 +37,8 @@ public class move : MonoBehaviour
     //动画组件
     private Animator ani;
 
+    private float nu;
+
     // Start is called before the first frame update
     void Awake()
     {
@@ -49,6 +53,11 @@ public class move : MonoBehaviour
         width = bloorBarImage.sizeDelta.x;
         //获取第一个子对象的动画组件
         ani = transform.GetChild(0).GetComponent<Animator>();
+
+        //设置分数为0
+        PlayerPrefs.SetFloat("Score", 0);
+   
+        
     }
 
     // Update is called once per frame
@@ -107,10 +116,10 @@ public class move : MonoBehaviour
                 Debug.Log("Game Over");
             }
         }
+
+
+
         
-           
-
-
 
     }
 
@@ -125,10 +134,28 @@ public class move : MonoBehaviour
         }
 
         //触碰到终点就结束游戏
-        if (collision.name == "End")
+        if (collision.tag == "EndGame")
         {
             Time.timeScale = 0;
             EndGame.SetActive(true);
+            PlayerPrefs.SetFloat("Score", number);
+            float score = PlayerPrefs.GetFloat("Score");
+           if(score > 25)
+            {
+                starList[0].SetActive(true);
+                starList[1].SetActive(true);
+                starList[2].SetActive(true);
+            }
+           else if (score>=15 && score < 25)
+            {
+                starList[0].SetActive(true);
+                starList[1].SetActive(true);
+            }
+            else
+            {
+                starList[0].SetActive(true);
+            }
+
         }
 
         //触碰到加血点就一格血
@@ -140,6 +167,8 @@ public class move : MonoBehaviour
             bloodBarText.text = number.ToString();
             Destroy(collision.gameObject);
         }
+
+      
 
     }
 
