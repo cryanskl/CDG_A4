@@ -29,7 +29,7 @@ public class Button: MonoBehaviour
 
     public void QuitGame()
     {
-        UnityEditor.EditorApplication.isPlaying = false;
+        //UnityEditor.EditorApplication.isPlaying = false;
         Application.Quit();
         Time.timeScale = 1f;
     }
@@ -37,6 +37,13 @@ public class Button: MonoBehaviour
     public void GoBackMenu()
     {
         SceneManager.LoadSceneAsync("StartInterface");
+        DontDestroyOnLoad(gameObject);
+        Time.timeScale = 1f;
+    }
+
+    public void LoadTutrial()
+    {
+        SceneManager.LoadSceneAsync("tutrial");
         DontDestroyOnLoad(gameObject);
         Time.timeScale = 1f;
     }

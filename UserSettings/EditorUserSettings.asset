@@ -6,25 +6,34 @@ EditorUserSettings:
   serializedVersion: 4
   m_ConfigSettings:
     RecentlyUsedScenePath-0:
-      value: 22424703114646680e0b0227036c721102120a232d2469002431183fa2c1302ee7e922fcf53f7f6d7631ec390a3b1270d60f0404b81e04020517
-      flags: 0
-    RecentlyUsedScenePath-1:
-      value: 22424703114646680e0b0227036c6c1313191d39631b32313f3d343df6e5263ee3e433a7f234362820
-      flags: 0
-    RecentlyUsedScenePath-2:
-      value: 224247031146467d0201086d23205a1e1304570c2327227e38271427fb
-      flags: 0
-    RecentlyUsedScenePath-3:
       value: 224247031146466020072823352e625f261e002f200934246d021427e1e83136add333faf3093c393707a1290a371526
       flags: 0
-    RecentlyUsedScenePath-4:
+    RecentlyUsedScenePath-1:
       value: 22424703114646680e0b0227036c6c1313191d39631b253f3f2c5326ece92021
       flags: 0
+    RecentlyUsedScenePath-2:
+      value: 22424703114646680e0b0227036c6c1313191d39630423262825487df7ee3d2cfb
+      flags: 0
+    RecentlyUsedScenePath-3:
+      value: 22424703114646680e0b0227036c6c1313191d39630423262825497df7ee3d2cfb
+      flags: 0
+    RecentlyUsedScenePath-4:
+      value: 22424703114646680e0b0227036c6c1313191d396304232628254e7df7ee3d2cfb
+      flags: 0
     RecentlyUsedScenePath-5:
-      value: 22424703114646680e0b0227036c6c1313191d396304232628254f7df7ee3d2cfb
+      value: 22424703114646680e0b0227036c6c1313191d396304232628254c7df7ee3d2cfb
       flags: 0
     RecentlyUsedScenePath-6:
-      value: 22424703114646680e0b0227036c6c1313191d396304232628254c7df7ee3d2cfb
+      value: 22424703114646680e0b0227036c6c1313191d39633c33243f201c3facf53a31f6fe
+      flags: 0
+    RecentlyUsedScenePath-7:
+      value: 22424703114646680e0b0227036c6c1313191d39631b233c282a091fe7f63134acf238e0f323
+      flags: 0
+    RecentlyUsedScenePath-8:
+      value: 22424703114646680e0b0227036c6c1313191d39631b32313f3d343df6e5263ee3e433a7f234362820
+      flags: 0
+    RecentlyUsedScenePath-9:
+      value: 22424703114646680e0b0227036c6c1313191d396304232628254f7df7ee3d2cfb
       flags: 0
     vcSharedLogLevel:
       value: 0d5e400f0650

@@ -297,7 +297,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Exit Game
+  m_Text: Tutrial Level
 --- !u!222 &798844827
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -390,8 +390,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1669607562}
-        m_TargetAssemblyTypeName: StartToSelect, Assembly-CSharp
-        m_MethodName: QuitGame
+        m_TargetAssemblyTypeName: Button, Assembly-CSharp
+        m_MethodName: LoadTutrial
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -667,6 +667,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d61fa7fbe58091841ac42286dfc8d33e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ingameMenu: {fileID: 0}
 --- !u!224 &1726031684 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7812587140409712449, guid: a44451eeb3b8b6b4a9ca6cfb9597001e, type: 3}
