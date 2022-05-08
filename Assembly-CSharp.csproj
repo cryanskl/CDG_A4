@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{879B6221-65F5-0901-C2EF-E01C6B3C243D}</ProjectGuid>
+    <ProjectGuid>{B9129E37-10B9-59BB-814B-D0E516E394DA}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -57,12 +57,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scenes\Scripts\move.cs" />
+    <Compile Include="Assets\Scenes\Scripts\WayPoint.cs" />
     <Compile Include="Assets\Scenes\Scripts\GradientEffect.cs" />
     <Compile Include="Assets\Scenes\Scripts\Button.cs" />
     <Compile Include="Assets\Scenes\Scripts\TriggerCounter.cs" />
-    <Compile Include="Assets\Scenes\Scripts\Level1move.cs" />
-    <Compile Include="Assets\Scenes\Scripts\WayPoint.cs" />
     <Compile Include="Assets\Scenes\Scripts\MonsterMove.cs" />
+    <Compile Include="Assets\Scenes\Scripts\Level1move.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
