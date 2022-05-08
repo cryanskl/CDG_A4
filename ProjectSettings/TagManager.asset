@@ -7,6 +7,8 @@ TagManager:
   - box
   - EndGame
   - BloodHeal
+  - Monster-2hp
+  - Monster-4hp
   layers:
   - Default
   - TransparentFX

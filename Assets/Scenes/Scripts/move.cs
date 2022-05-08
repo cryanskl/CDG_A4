@@ -5,36 +5,36 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 public class move : MonoBehaviour
 {
-    [Header("ÒÆ¶¯ËÙ¶È")]
+    [Header("Movement Speed")]
     public float moveSpeed =1f;
-    [Header("ÖÕµã")]
+    [Header("End Point")]
     public GameObject EndGame;
-    [Header("Íæ¼ÒÒÆ¶¯µã")]
+    [Header("Player movement points")]
     public Transform movePoint;
-    [Header("ÒÆ¶¯¼ì²â²ã")]
+    [Header("Movement detection layer")]
     public LayerMask whatStopMovement;
-    [Header("ÉúÃüÖµÎÄ±¾")]
+    [Header("HP text")]
     public Text bloodBarText;
-    [Header("ÑªÌõ")]
+    [Header("HP bar")]
     public RectTransform bloorBarImage;
-    [Header("ĞÇĞÇĞòÁĞ")]
+    [Header("Star list")]
     public GameObject[] starList;
-   
-    
+
+
     /// <summary>
-    /// ĞéÄâÖáµÄÖµ
+    /// Virtual axis values
     /// </summary>
     private float ver, hor;
 
     /// <summary>
-    /// ÉúÃüÖµ
+    /// HP value
     /// </summary>
     private int number;
 
-    //ÉúÃüÖµÍ¼Æ¬µÄ³¤¶È
+    //Length of the HP value image
     private float width;
 
-    //¶¯»­×é¼ş
+    //Animation components
     private Animator ani;
 
     private float nu;
@@ -43,18 +43,18 @@ public class move : MonoBehaviour
     void Awake()
     {
 
-        //°ÑmovePoint´ÓÍæ¼ÒÀïÒÆ³öÀ´
+        //Removing movePoint from the player
         movePoint.parent = null;
-        //³õÊ¼»¯ÉúÃüÖµ
+        //Initial life value
         number = 40;
-        //³õÊ¼»¯ÉúÃüÖµÎÄ±¾
+        //Initialising the life value text
         bloodBarText.text = number.ToString();
-        //»ñÈ¡ÑªÌõ³¤¶È
+        //Get blood bar length
         width = bloorBarImage.sizeDelta.x;
-        //»ñÈ¡µÚÒ»¸ö×Ó¶ÔÏóµÄ¶¯»­×é¼ş
+        //Get the animation component of the first child object
         ani = transform.GetChild(0).GetComponent<Animator>();
 
-        //ÉèÖÃ·ÖÊıÎª0
+        //ï¿½ï¿½ï¿½Ã·ï¿½ï¿½ï¿½Îª0
         PlayerPrefs.SetFloat("Score", 0);
    
         
@@ -63,34 +63,34 @@ public class move : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //»ñÈ¡Ë®Æ½ĞéÄâÖá
+        //ï¿½ï¿½È¡Ë®Æ½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         hor = Input.GetAxis("Horizontal");
-        //»ñÈ¡´¹Ö±ĞéÄâÖá
+        //ï¿½ï¿½È¡ï¿½ï¿½Ö±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         ver = Input.GetAxis("Vertical");
-        //Íæ¼Ò¹Ì¶¨ÒÆ¶¯µÄ¾àÀë
+        //ï¿½ï¿½Ò¹Ì¶ï¿½ï¿½Æ¶ï¿½ï¿½Ä¾ï¿½ï¿½ï¿½
         transform.position = Vector3.MoveTowards(transform.position, movePoint.position, moveSpeed*Time.deltaTime);
 
         
-        //¼ÆËãÍæ¼ÒÓëÒÆ¶¯µãµÄ¾àÀë
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¶ï¿½ï¿½ï¿½Ä¾ï¿½ï¿½ï¿½
         if (Vector3.Distance(transform.position, movePoint.position) <= .05f)
         {
-            //ÅĞ¶ÏHorizontalĞéÄâÖáµÄ¾ø¶ÔÖµÊÇ·ñÎª1£¬Input.GetAxisRaw·µ»ØµÄÖµÓĞ-1£¬0£¬1ÈıÖÖ
+            //ï¿½Ğ¶ï¿½Horizontalï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¾ï¿½ï¿½ï¿½Öµï¿½Ç·ï¿½Îª1ï¿½ï¿½Input.GetAxisRawï¿½ï¿½ï¿½Øµï¿½Öµï¿½ï¿½-1ï¿½ï¿½0ï¿½ï¿½1ï¿½ï¿½ï¿½ï¿½
             if (Mathf.Abs(Input.GetAxisRaw("Horizontal")) == 1f)
             {
-                //¼ì²âÍæ¼Ò¸½½üÊÇ·ñÓĞÅö×²Ìå£¬ÓĞÔò·µ»Øtrue£¬Ã»ÓĞÔò·µ»Øfalse
+                //ï¿½ï¿½ï¿½ï¿½ï¿½Ò¸ï¿½ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½ï¿½ï¿½×²ï¿½å£¬ï¿½ï¿½ï¿½ò·µ»ï¿½trueï¿½ï¿½Ã»ï¿½ï¿½ï¿½ò·µ»ï¿½false
                 if (!Physics2D.OverlapCircle(movePoint.position + new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f), .2f, whatStopMovement))
                 {
-                    //Èç¹ûÃ»ÓĞÅö×²Ìå£¬movePointºá×ø±ê+1
+                    //ï¿½ï¿½ï¿½Ã»ï¿½ï¿½ï¿½ï¿½×²ï¿½å£¬movePointï¿½ï¿½ï¿½ï¿½ï¿½ï¿½+1
                     movePoint.position += new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f);
-                    //ÉúÃüÖµ¼õ1
+                    //ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½1
                     number--;
-                    //³¤¶È¼õ6
+                    //ï¿½ï¿½ï¿½È¼ï¿½6
                     width -= 6;
-                    //¸üĞÂÍ¼Æ¬³¤¶È
+                    //ï¿½ï¿½ï¿½ï¿½Í¼Æ¬ï¿½ï¿½ï¿½ï¿½
                     bloorBarImage.sizeDelta = new Vector2(width, bloorBarImage.sizeDelta.y);
-                    //¸üĞÂÉúÃüÖµÎÄ±¾
+                    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½Ä±ï¿½
                     bloodBarText.text = number.ToString();
-                    //ÒÆ¶¯´¥·¢¶¯»­²ÎÊı
+                    //ï¿½Æ¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
                     ani.SetTrigger("Move");
 
                 }
@@ -126,14 +126,28 @@ public class move : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
-        //´¥Åöµ½¹ÖÎï¾Í·¢ÉúÕ½¶·
-        if (collision.name == "monster")
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í·ï¿½ï¿½ï¿½Õ½ï¿½ï¿½
+        if (collision.tag == "Monster-2hp")
         {
-            Destroy(GameObject.Find("monster"), 0.5f);
-            GameObject.Find("Door2").GetComponent<BoxCollider2D>().isTrigger = true;
+            number = number - 2;
+            width = width - 12;
+            bloorBarImage.sizeDelta = new Vector2(width, bloorBarImage.sizeDelta.y);
+            bloodBarText.text = number.ToString();
+            Destroy(collision.gameObject, 0.1f);
+            //GameObject.Find("Door2").GetComponent<BoxCollider2D>().isTrigger = true;
         }
 
-        //´¥Åöµ½ÖÕµã¾Í½áÊøÓÎÏ·
+        if (collision.tag == "Monster-4hp")
+        {
+            number = number - 4;
+            width = width - 24;
+            bloorBarImage.sizeDelta = new Vector2(width, bloorBarImage.sizeDelta.y);
+            bloodBarText.text = number.ToString();
+            Destroy(collision.gameObject, 0.1f);
+            //GameObject.Find("Door2").GetComponent<BoxCollider2D>().isTrigger = true;
+        }
+
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õµï¿½Í½ï¿½ï¿½ï¿½ï¿½ï¿½Ï·
         if (collision.tag == "EndGame")
         {
             Time.timeScale = 0;
@@ -158,11 +172,11 @@ public class move : MonoBehaviour
 
         }
 
-        //´¥Åöµ½¼ÓÑªµã¾ÍÒ»¸ñÑª
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñªï¿½ï¿½ï¿½Ò»ï¿½ï¿½Ñª
        if(collision.tag == "BloodHeal")
         {
-            number ++;
-            width += 6;
+            number =number + 6;
+            width += 12;
             bloorBarImage.sizeDelta = new Vector2(width, bloorBarImage.sizeDelta.y);
             bloodBarText.text = number.ToString();
             Destroy(collision.gameObject);
