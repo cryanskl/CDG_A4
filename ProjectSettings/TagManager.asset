@@ -9,6 +9,8 @@ TagManager:
   - BloodHeal
   - Monster-2hp
   - Monster-4hp
+  - delivery
+  - Stop-2hp
   layers:
   - Default
   - TransparentFX

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MonsterMove: MonoBehaviour
+public class Monster406 : MonoBehaviour
 {
     private Transform[] positions;
 
@@ -12,7 +12,7 @@ public class MonsterMove: MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        positions = WayPoint.wayPoint;
+        positions = L4WayPoint.L4wayPoint6;
     }
 
     // Update is called once per frame

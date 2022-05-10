@@ -8,7 +8,7 @@ public class TriggerCounter : MonoBehaviour
 
     private void Update()
     {
-        num = PlayerPrefs.GetFloat("number");
+        num = PlayerPrefs.GetFloat("Number");
     }
    
 
@@ -17,16 +17,15 @@ public class TriggerCounter : MonoBehaviour
         if (collision.tag == "box")
         { 
             ++num;
-            PlayerPrefs.SetFloat("number", num);
+            PlayerPrefs.SetFloat("Number", num);
         }
 
         if (collision.tag == "Player")
         {
             ++num;
-            PlayerPrefs.SetFloat("number", num);
+            PlayerPrefs.SetFloat("Number", num);
             Destroy(gameObject);
         }
-       
     }
 
 }

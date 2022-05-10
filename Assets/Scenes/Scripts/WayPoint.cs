@@ -8,11 +8,12 @@ public class WayPoint : MonoBehaviour
 
     private void Awake()
     {
-        wayPoint = new Transform[transform.childCount];
+        wayPoint = new Transform[GameObject.Find("WayPoint").transform.childCount];
 
         for (int i = 0; i < wayPoint.Length; i++)
         {
-            wayPoint[i] = transform.GetChild(i);
+            wayPoint[i] = GameObject.Find("WayPoint").transform.GetChild(i);
+
         }
     }
 
