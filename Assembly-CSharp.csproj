@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scenes\Scripts\move.cs" />
+    <Compile Include="Assets\Scenes\Scripts\MonsterMove.cs" />
     <Compile Include="Assets\Scenes\Scripts\MonsterMove\Monster404.cs" />
     <Compile Include="Assets\Scenes\Scripts\MonsterMove\L4WayPoint.cs" />
     <Compile Include="Assets\Scenes\Scripts\MonsterMove\Monster403.cs" />
@@ -71,7 +72,7 @@
     <Compile Include="Assets\Scenes\Scripts\TriggerCounter.cs" />
     <Compile Include="Assets\Scenes\Scripts\MonsterMove\Monster400.cs" />
     <Compile Include="Assets\Scenes\Scripts\Level4move.cs" />
-    <Compile Include="Assets\Scenes\Scripts\MonsterMove.cs" />
+    <Compile Include="Assets\Scenes\Scripts\Level4Button.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

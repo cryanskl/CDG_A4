@@ -361,7 +361,7 @@ PrefabInstance:
     - target: {fileID: 5741311576737108540, guid: 07cd3687c646bc549bcfd10c6a62ecc8, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1020115619}
     - target: {fileID: 5741311576737108540, guid: 07cd3687c646bc549bcfd10c6a62ecc8, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -2313,7 +2313,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d61fa7fbe58091841ac42286dfc8d33e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingameMenu: {fileID: 0}
+  ingameMenu: {fileID: 2028639156}
 --- !u!4 &1020115620
 Transform:
   m_ObjectHideFlags: 0
@@ -2684,7 +2684,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1521094466
@@ -11458,6 +11458,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  item: {fileID: 0}
 --- !u!50 &4841689449829870175
 Rigidbody2D:
   serializedVersion: 4

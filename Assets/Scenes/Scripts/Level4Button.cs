@@ -6,33 +6,36 @@ using UnityEngine.UI;
 
 
 
-public class Button: MonoBehaviour
+public class Level4Button : MonoBehaviour
 {
-    //public GameObject information;
-    //public GameObject tip;
+    public GameObject information;
+    public GameObject tip;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        //if (Input.GetKeyDown(KeyCode.I))
-        //{
-        //    information.SetActive(true);
-        //}
-        //if (Input.GetKeyUp(KeyCode.I))
-        //{
-        //    information.SetActive(false);
-        //}
-
-        //if (Time.time >= 3f)
-        //{
-        //    tip.SetActive(false);
-        //}
+        if (Input.GetKeyDown(KeyCode.I))
+        {
+            information.SetActive(true);
+            tip.SetActive(false);
+        }
+        if (Input.GetKeyUp(KeyCode.I))
+        {
+            information.SetActive(false);
+        }
+        if (tip == true)
+        {
+            if (Time.time >= 3f)
+            {
+                tip.SetActive(false);
+            }
+        }
     }
 
     public void LoadSelectLeve()

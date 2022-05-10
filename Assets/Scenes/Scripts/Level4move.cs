@@ -139,7 +139,10 @@ public class Level4move : MonoBehaviour
             Destroy(GameObject.Find("Air Wall3"));
         }
 
+        //if (Input.GetKeyDown(KeyCode.I))
+        //{
 
+        //}
 
 
 
