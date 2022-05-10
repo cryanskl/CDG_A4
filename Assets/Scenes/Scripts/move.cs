@@ -9,6 +9,8 @@ public class move : MonoBehaviour
     public float moveSpeed =1f;
     [Header("End Point")]
     public GameObject EndGame;
+    [Header("Game Over")]
+    public GameObject GameOver;
     [Header("Player movement points")]
     public Transform movePoint;
     [Header("Movement detection layer")]
@@ -120,6 +122,9 @@ public class move : MonoBehaviour
             {
                 number = 0;
                 bloodBarText.text = number.ToString();
+                Time.timeScale = 0;
+                GameOver.SetActive(true);
+
                 Debug.Log("Game Over");
             }
         }
