@@ -3,18 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - box
-  - EndGame
-  - BloodHeal
-  - Monster-2hp
-  - Monster-4hp
-<<<<<<< HEAD
-  - delivery
-  - Stop-2hp
-=======
-  - GameOver
->>>>>>> b6b942f0afe1447b672bd291113e0660a162149b
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -24,7 +13,7 @@ TagManager:
   - UI
   - 
   - 
-  - StopMovement
+  - 
   - 
   - 
   - 
