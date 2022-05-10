@@ -3,18 +3,14 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-<<<<<<< HEAD
   tags: 
-  - box
+ - box
   - EndGame
   - BloodHeal
   - Monster-2hp
   - Monster-4hp
   - delivery
   - Stop-2hp
-=======
-  tags: []
->>>>>>> 40fa9a77b144229436fc95735ae892cd819247a1
   layers:
   - Default
   - TransparentFX
