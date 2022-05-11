@@ -1598,7 +1598,6 @@ GameObject:
   - component: {fileID: 272064212}
   - component: {fileID: 272064211}
   - component: {fileID: 272064210}
-  - component: {fileID: 272064209}
   m_Layer: 5
   m_Name: GameOver
   m_TagString: EndGame
@@ -1628,19 +1627,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 400, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &272064209
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 272064207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d61fa7fbe58091841ac42286dfc8d33e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ingameMenu: {fileID: 272064207}
 --- !u!114 &272064210
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2300,7 +2286,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.79, y: 0.68}
+    oldSize: {x: 1.46, y: 1.05}
     newSize: {x: 0.79, y: 0.68}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -2349,7 +2335,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: a4f71988ecead1d4196d09dd5c9ddce3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f5f3c01595e46f84a8903f88acef2b0f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3841,7 +3827,7 @@ PrefabInstance:
     - target: {fileID: 7812587140409712448, guid: a44451eeb3b8b6b4a9ca6cfb9597001e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 272064209}
+      objectReference: {fileID: 1317289835}
     - target: {fileID: 7812587140409712448, guid: a44451eeb3b8b6b4a9ca6cfb9597001e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -3852,7 +3838,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7812587140409712448, guid: a44451eeb3b8b6b4a9ca6cfb9597001e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Button, Assembly-CSharp
+      value: Level4Button, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7812587140409712448, guid: a44451eeb3b8b6b4a9ca6cfb9597001e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -4053,7 +4039,7 @@ PrefabInstance:
     - target: {fileID: 7812587140409712448, guid: a44451eeb3b8b6b4a9ca6cfb9597001e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 2129915802}
+      objectReference: {fileID: 1317289835}
     - target: {fileID: 7812587140409712448, guid: a44451eeb3b8b6b4a9ca6cfb9597001e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -4064,7 +4050,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7812587140409712448, guid: a44451eeb3b8b6b4a9ca6cfb9597001e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Button, Assembly-CSharp
+      value: Level4Button, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7812587140409712448, guid: a44451eeb3b8b6b4a9ca6cfb9597001e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -4707,7 +4693,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.79, y: 0.68}
+    oldSize: {x: 1.46, y: 1.05}
     newSize: {x: 0.79, y: 0.68}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -4756,7 +4742,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: a4f71988ecead1d4196d09dd5c9ddce3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f5f3c01595e46f84a8903f88acef2b0f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4940,7 +4926,7 @@ PrefabInstance:
     - target: {fileID: 7812587140409712448, guid: a44451eeb3b8b6b4a9ca6cfb9597001e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 2129915802}
+      objectReference: {fileID: 1317289835}
     - target: {fileID: 7812587140409712448, guid: a44451eeb3b8b6b4a9ca6cfb9597001e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -4951,7 +4937,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7812587140409712448, guid: a44451eeb3b8b6b4a9ca6cfb9597001e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Button, Assembly-CSharp
+      value: Level4Button, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7812587140409712448, guid: a44451eeb3b8b6b4a9ca6cfb9597001e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -5823,7 +5809,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.79, y: 0.68}
+    oldSize: {x: 1.46, y: 1.05}
     newSize: {x: 0.79, y: 0.68}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -5872,7 +5858,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: a4f71988ecead1d4196d09dd5c9ddce3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f5f3c01595e46f84a8903f88acef2b0f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -7972,7 +7958,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.79, y: 0.68}
+    oldSize: {x: 1.46, y: 1.05}
     newSize: {x: 0.79, y: 0.68}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -8021,7 +8007,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: a4f71988ecead1d4196d09dd5c9ddce3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f5f3c01595e46f84a8903f88acef2b0f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -8216,7 +8202,7 @@ PrefabInstance:
     - target: {fileID: 7812587140409712448, guid: a44451eeb3b8b6b4a9ca6cfb9597001e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 272064209}
+      objectReference: {fileID: 1317289835}
     - target: {fileID: 7812587140409712448, guid: a44451eeb3b8b6b4a9ca6cfb9597001e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -8227,7 +8213,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7812587140409712448, guid: a44451eeb3b8b6b4a9ca6cfb9597001e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Button, Assembly-CSharp
+      value: Level4Button, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7812587140409712448, guid: a44451eeb3b8b6b4a9ca6cfb9597001e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -10826,7 +10812,6 @@ GameObject:
   - component: {fileID: 2129915800}
   - component: {fileID: 2129915799}
   - component: {fileID: 2129915801}
-  - component: {fileID: 2129915802}
   m_Layer: 5
   m_Name: EndGame
   m_TagString: EndGame
@@ -10909,19 +10894,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   top: {r: 0.50365806, g: 0.6415094, b: 0.3957992, a: 1}
   bottom: {r: 1, g: 1, b: 1, a: 1}
---- !u!114 &2129915802
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2129915797}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d61fa7fbe58091841ac42286dfc8d33e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ingameMenu: {fileID: 2129915797}
 --- !u!1001 &675013669306671455
 PrefabInstance:
   m_ObjectHideFlags: 0

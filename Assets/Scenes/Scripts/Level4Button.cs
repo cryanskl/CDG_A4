@@ -45,13 +45,6 @@ public class Level4Button : MonoBehaviour
         Time.timeScale = 1f;
     }
 
-    public void QuitGame()
-    {
-        //UnityEditor.EditorApplication.isPlaying = false;
-        Application.Quit();
-        Time.timeScale = 1f;
-    }
-
     public void GoBackMenu()
     {
         SceneManager.LoadSceneAsync("StartInterface");
@@ -111,8 +104,8 @@ public class Level4Button : MonoBehaviour
 
     public void onResume()
     {
-        Time.timeScale = 1;
-        ingameMenu.SetActive(false);
+        //Time.timeScale = 1;
+        //ingameMenu.SetActive(false);
     }
 
     public void OnRestart()
