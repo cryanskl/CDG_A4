@@ -193,7 +193,7 @@ public class move : MonoBehaviour
        if(collision.tag == "BloodHeal")
         {
             number += 6;
-            width += 12;
+            width += 36;
             bloorBarImage.sizeDelta = new Vector2(width, bloorBarImage.sizeDelta.y);
             bloodBarText.text = number.ToString();
             Destroy(collision.gameObject);
