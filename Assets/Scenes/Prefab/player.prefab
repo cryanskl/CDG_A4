@@ -59,7 +59,7 @@ Transform:
   m_GameObject: {fileID: 4841689448903061817}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -21.96, y: -8.16, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.4, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2924236722181868607}
   m_Father: {fileID: 0}
@@ -105,7 +105,7 @@ SpriteRenderer:
   m_SortingLayerID: -971385673
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: -6367560908665664636, guid: 3750f45c844123341b9a777a96cb1eca, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -113,7 +113,7 @@ SpriteRenderer:
   m_Size: {x: 2, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!50 &4841689448903061813
@@ -150,18 +150,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.032518387, y: -0.36438167}
+  m_Offset: {x: 0.056459427, y: -0.28650022}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.32, y: 0.32}
-    newSize: {x: 0.32, y: 0.32}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 2, y: 2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.767086, y: 1.1156566}
+  m_Size: {x: 1.0296516, y: 1.4269996}
   m_EdgeRadius: 0
 --- !u!114 &4841689448903061812
 MonoBehaviour:
@@ -175,17 +175,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1b0ebf86f8fd684ead58cf1ebb1cccb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 2.5
+  moveSpeed: 10
   EndGame: {fileID: 0}
-  GameOver: {fileID: 0}
-  movePoint: {fileID: 2924236722181868607}
-  whatStopMovement:
-    serializedVersion: 2
-    m_Bits: 256
-  bloodBarText: {fileID: 0}
-  bloorBarImage: {fileID: 0}
-  starList:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  item: {fileID: 0}

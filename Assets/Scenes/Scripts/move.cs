@@ -171,7 +171,7 @@ public class move : MonoBehaviour
             EndGame.SetActive(true);
             PlayerPrefs.SetFloat("Score", number);
             float score = PlayerPrefs.GetFloat("Score");
-           if(score >= 25)
+           if(score > 25)
             {
                 starList[0].SetActive(true);
                 starList[1].SetActive(true);
@@ -193,7 +193,7 @@ public class move : MonoBehaviour
        if(collision.tag == "BloodHeal")
         {
             number += 6;
-            width += 36;
+            width += 12;
             bloorBarImage.sizeDelta = new Vector2(width, bloorBarImage.sizeDelta.y);
             bloodBarText.text = number.ToString();
             Destroy(collision.gameObject);
