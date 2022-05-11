@@ -12831,10 +12831,10 @@ MonoBehaviour:
   bloodBarText: {fileID: 1903425736}
   bloorBarImage: {fileID: 794568451}
   starList:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  item: {fileID: 0}
+  - {fileID: 326204630}
+  - {fileID: 417198245}
+  - {fileID: 1682754719}
+  item: {fileID: 4841689449829870163}
 --- !u!50 &4841689449829870175
 Rigidbody2D:
   serializedVersion: 4

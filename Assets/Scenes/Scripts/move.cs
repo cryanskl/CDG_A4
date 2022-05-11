@@ -171,7 +171,7 @@ public class move : MonoBehaviour
             EndGame.SetActive(true);
             PlayerPrefs.SetFloat("Score", number);
             float score = PlayerPrefs.GetFloat("Score");
-           if(score > 25)
+           if(score >= 25)
             {
                 starList[0].SetActive(true);
                 starList[1].SetActive(true);
