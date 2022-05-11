@@ -29,13 +29,13 @@ public class Level4Button : MonoBehaviour
         {
             information.SetActive(false);
         }
-        if (tip == true)
-        {
-            if (Time.time >= 3f)
-            {
-                tip.SetActive(false);
-            }
-        }
+        //if (tip == true)
+        //{
+        //    if (Time.time >= 3f)
+        //    {
+        //        tip.SetActive(false);
+        //    }
+        //}
     }
 
     public void LoadSelectLeve()
