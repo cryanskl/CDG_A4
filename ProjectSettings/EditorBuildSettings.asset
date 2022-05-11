@@ -6,6 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Scenes/StartInterface.unity
+    guid: f35a9d828c102684db22e332e7d8abcb
+  - enabled: 1
+    path: Assets/Scenes/Scenes/SelectLevel.unity
+    guid: 49770d3b546cb2a4b8a63bf1e0d3e0b3
+  - enabled: 1
+    path: Assets/Scenes/Scenes/tutrial.unity
+    guid: 39b4774a7aa050b42848b07ce46a88bd
+  - enabled: 1
     path: Assets/Scenes/Scenes/Level1.unity
     guid: 78ceeab179245ff4e963a11f6690b1f2
   - enabled: 1
@@ -20,13 +29,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Scenes/Level5.unity
     guid: c05a1c6a9662d2c41be1a1640673f10b
-  - enabled: 1
-    path: Assets/Scenes/Scenes/SelectLevel.unity
-    guid: 49770d3b546cb2a4b8a63bf1e0d3e0b3
-  - enabled: 1
-    path: Assets/Scenes/Scenes/StartInterface.unity
-    guid: f35a9d828c102684db22e332e7d8abcb
-  - enabled: 1
-    path: Assets/Scenes/Scenes/tutrial.unity
-    guid: 39b4774a7aa050b42848b07ce46a88bd
   m_configObjects: {}
