@@ -1,7 +1,52 @@
 fileFormatVersion: 2
 guid: b83affca565a91449a44cdf90a682ac5
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -7519876988133445269
+    second: tool12_0
+  - first:
+      213: 1526331333804052608
+    second: tool12_1
+  - first:
+      213: -4257353220417706505
+    second: tool12_2
+  - first:
+      213: 2777661078480568503
+    second: tool12_3
+  - first:
+      213: 6193454220507301305
+    second: tool12_4
+  - first:
+      213: -5483333878950405802
+    second: tool12_5
+  - first:
+      213: -5169356045269493787
+    second: tool12_6
+  - first:
+      213: -1988697450435202749
+    second: tool12_7
+  - first:
+      213: 6593171736530274589
+    second: tool12_8
+  - first:
+      213: -9158623226515579564
+    second: tool12_9
+  - first:
+      213: 991604154683228805
+    second: tool12_10
+  - first:
+      213: -6374501277788229837
+    second: tool12_11
+  - first:
+      213: -5580413943133139477
+    second: tool12_12
+  - first:
+      213: -910688184507991068
+    second: tool12_13
+  - first:
+      213: -3332738280067452342
+    second: tool12_14
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,12 +86,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 62
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -74,10 +119,349 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: tool12_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 251.2
+        width: 62
+        height: 62.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b61fba7a8b704a790800000000000000
+      internalID: -7519876988133445269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tool12_1
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 251.2
+        width: 62
+        height: 62.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08050f0e24e9e2510800000000000000
+      internalID: 1526331333804052608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tool12_2
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 251.2
+        width: 62
+        height: 62.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f523ad6dc7dae4c0800000000000000
+      internalID: -4257353220417706505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tool12_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 189.2
+        width: 62
+        height: 62.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b04341c80c3c8620800000000000000
+      internalID: 2777661078480568503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tool12_4
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 189.2
+        width: 62
+        height: 62.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b54bf99cc193f550800000000000000
+      internalID: 6193454220507301305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tool12_5
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 189.2
+        width: 62
+        height: 62.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 659db4893e847e3b0800000000000000
+      internalID: -5483333878950405802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tool12_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 127.2
+        width: 62
+        height: 62.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e79134b012c248b0800000000000000
+      internalID: -5169356045269493787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tool12_7
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 127.2
+        width: 62
+        height: 62.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 341b515943ab664e0800000000000000
+      internalID: -1988697450435202749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tool12_8
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 127.2
+        width: 62
+        height: 62.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d19480323c6af7b50800000000000000
+      internalID: 6593171736530274589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tool12_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 65.2
+        width: 62
+        height: 62.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45d95ef23b806e080800000000000000
+      internalID: -9158623226515579564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tool12_10
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 65.2
+        width: 62
+        height: 62.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58202b599b2e2cd00800000000000000
+      internalID: 991604154683228805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tool12_11
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 65.2
+        width: 62
+        height: 62.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33fa8258cd83987a0800000000000000
+      internalID: -6374501277788229837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tool12_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3.2000008
+        width: 62
+        height: 62.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bed89e3c5136e82b0800000000000000
+      internalID: -5580413943133139477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tool12_13
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 3.2000008
+        width: 62
+        height: 62.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eb7145dbe59c53f0800000000000000
+      internalID: -910688184507991068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tool12_14
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 3.2000008
+        width: 62
+        height: 62.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a42bb3f113cbfb1d0800000000000000
+      internalID: -3332738280067452342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
